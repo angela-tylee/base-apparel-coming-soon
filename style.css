@@ -1,0 +1,222 @@
+
+/* 
+- Desaturated Red: hsl(0, 36%, 70%)
+- Soft Red: hsl(0, 93%, 68%)
+- Dark Grayish Red: hsl(0, 6%, 24%)
+
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) 
+*/
+
+:root {
+  --desaturated-red: #ce9797;
+  --soft-red: #f96262;
+  --dark-grayish-red: #413a3a;
+}
+
+html {
+  font-size: 16px;
+}
+
+html, body {
+  height: 100%;
+}
+
+html, body, h1, p, input, button {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--dark-grayish-red);
+}
+
+.container {
+  margin: 0 auto;
+  padding-right: 5%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  background-image: url(./images/bg-pattern-desktop.svg);
+}
+
+body, input::placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--desaturated-red);
+
+}
+
+header {
+  padding-block: 4em 1em;
+}
+
+footer {
+  padding-block: 1em;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3em;
+}
+
+.hero-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-img-mobile {
+  display: none;
+}
+
+.content span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 0.3em;
+}
+
+.content span:nth-of-type(1) {
+  font-weight: 100;
+}
+
+.content span:not(:nth-of-type(1)) {
+  font-weight: 600;
+  color: var(--dark-grayish-red);
+}
+
+.content p {
+  line-height: 1.8em;
+}
+
+.email-input-container {
+  width: 100%;
+  text-align: left;
+}
+
+.email-input {
+  height: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.email-input input,
+.email-input button {
+  height: 100%;
+  border-radius: 40px;
+  padding-inline: 2em;
+}
+
+
+.email-input input {
+  width: 100%; 
+  border: 1px solid var(--desaturated-red);
+}
+
+.email-input input:focus {
+  outline: none;
+}
+
+.email-input button {
+  width: 20%;
+  border: 0;
+  position: absolute;
+  right: 0;
+  background-color: linear-gradient(135deg, #ffffff, #fff5f5);
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)); 
+  box-shadow: 0px 8px 24px 4px #e6c7c796;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-input button:hover {
+  background: linear-gradient(135deg, hsl(0, 74%, 74%), hsl(0, 80%, 86%)); 
+  cursor: pointer;
+}
+
+.message {
+  height: 1em;
+  margin-top: 1em;
+  padding-inline: 2em;
+  font-size: 0.8rem;
+  visibility: hidden;
+}
+
+.success {
+  color: #48ba68;
+}
+
+.error {
+  color: var(--soft-red);
+}
+
+@media (max-width: 1024px) {
+  .content span {
+    font-size: 3rem;
+  }  
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    grid-template-columns: 1fr;
+    background-image: url(./images/bg-pattern-desktop.svg);
+  }
+  header {
+    padding-block: 0;
+  }
+  .logo {
+    width: 35%;
+  }
+  .logo img {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .content {
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    gap: 1.5em;
+  }
+  .container-mobile {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .hero-img {
+    display: none;
+  }
+  .hero-img-mobile {
+    height: 30%;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+  .hero-img-mobile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .content span {
+    font-size: 2.5rem;
+  }
+}
