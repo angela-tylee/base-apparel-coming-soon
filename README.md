@@ -17,12 +17,16 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 ## Overview
 
 ### The challenge / Screenshot
+<img width="1435" alt="image" src="https://github.com/angela-tylee/base-apparel-coming-soon/assets/145020731/f0639692-56ef-4215-b9db-ef25b1d56920">
+<img width="1434" alt="image" src="https://github.com/angela-tylee/base-apparel-coming-soon/assets/145020731/d859925c-6efb-4b79-a301-2ec6d4eb7db8">
+<img width="1438" alt="image" src="https://github.com/angela-tylee/base-apparel-coming-soon/assets/145020731/eeb842f7-e9c7-4bf1-ab5b-74281f9aaca4">
+<img width="364" alt="image" src="https://github.com/angela-tylee/base-apparel-coming-soon/assets/145020731/f9e208d4-a39f-40cb-a2f9-917f4add820a">
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/angela-tylee/base-apparel-coming-soon
+- Live Site URL: https://angela-tylee.github.io/base-apparel-coming-soon/
 
 ## My process
 
